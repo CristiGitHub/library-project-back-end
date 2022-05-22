@@ -1,0 +1,23 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+    banner-mode: off
+  application:
+    name: API-LIBRARY
+  datasource:
+    url: jdbc:postgresql://localhost:5432/library
+    driveClassName: org.postgresql.Driver
+    username: admin
+    password: admin
+  jpa:
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        show_sql: true
+        hbm2ddl:
+          auto: create-drop
+
+server:
+  port: 8085
+
